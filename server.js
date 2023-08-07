@@ -76,10 +76,10 @@ data type: Array , object, function ext
 
 
 //*********** File Management in javascript************* */
- const fs = require("fs");
+//  const fs = require("fs");
 //create new file
 // fs.writeFileSync("text.txt", "Welcome in my World");
 // fs.appendFileSync("text.txt", " thank you for coming");
-const show_File = fs.readFileSync("text.txt");
-wordma = show_File.toString();
-console.log(wordma);
+// const show_File = fs.readFileSync("text.txt");
+// wordma = show_File.toString();
+// console.log(wordma);

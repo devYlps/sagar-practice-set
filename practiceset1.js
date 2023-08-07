@@ -97,7 +97,7 @@
 // console.log(name3);
 // console.log(name1);
 
-// a) Write a program using user-defined function for addition of N numbers.
+//8. a) Write a program using user-defined function for addition of N numbers.
 //  let num = parseInt(prompt("Enter the number"));
 //  let sum = 0;
 //  for (i = 1; i<=num; i++){
@@ -135,6 +135,7 @@
 //     return num%10 + Math.floor(sum(num/10))
 // }
 // console.log(sum(125));
+
 // 10. Define a structure called time_struct containing three members integer
 // hour, integer minute and integer second. Develop a program that
 // would assign values to individual members and display the time in the following formate
@@ -142,6 +143,7 @@
 // const minute = 30;
 // const second = 45;
 // console.log(`Time: ${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}:${second.toString().padStart(2, '0')}`);
+
 //11.  Define a structure called bank containing account no., holder name and
 // balance  and  display  them  for  N  holders  whose  balance  is  less  than
 // 5000.
@@ -164,9 +166,55 @@
 //     console.log(`Holder Name: ${account.holderName}`);
 //     console.log(`Balance: ${account.balance}`);
 //   }
+
 //12. Define a structure called student_record containing name, date of birth
 // and total marks obtained. Use the date structure to represent the date
 // of birth. Develop a program to read data for 10 students in a class and
 // list them rank-wise.
-// 17 a) Write a program to create a file and check whether exist or not.
 
+// 17 a) Write a program to create a file and check whether exist or not.
+// const fs = require("fs");
+// //create file
+// fs.writeFileSync("sample.txt", "hello guys");
+// const path = './sample.txt'
+
+// // See if the file exists
+// try {
+//     if (fs.existsSync(path)) {
+//       //file exists
+//       console.log("file Exist")
+//     }
+//   } catch(err) {
+//     console.error(err)
+//   }
+// b) Write a program to read the content of a file and display it on
+// terminal.
+// const fs = require("fs");
+// //read file
+// const display_file = fs.readFileSync("sample.txt");
+// wordma = display_file.toString();
+// console.log(wordma);
+
+//18. a) Write a program to read content of a file and append the same
+// content in another file.
+// const fs = require("fs");
+// const display_file = fs.readFileSync("sample.txt");
+// fs.appendFileSync("sample.txt", " , thank you for coming");
+// wordma = display_file.toString();
+// console.log(wordma);
+// fs.writeFileSync("text.txt", wordma);
+
+// b) Write a program to copy the content of source file into destination
+// file.
+// const fs = require("fs");
+
+// const src = "sample.txt";
+// const dest = "copyFile.txt";
+
+// fs.copyFile(src, dest, (error) => {
+//   if (error) {
+//     console.error(error);
+//     return;
+//   }
+//   console.log("Copied Successfully!");
+// });
