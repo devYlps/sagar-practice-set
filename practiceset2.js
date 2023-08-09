@@ -281,10 +281,194 @@
 // X = X -Y = 48 - 25 = 23
 
 // 3.a) Write a program to find area of circle. 
-const pi = 3.14;
-const r = parseInt(prompt('Enter the radious of cicle '));
-function areaOfCircle(r){
-    let carea= pi * r *r;
-    document.write(carea)
-};
-areaOfCircle(r);
+// const pi = 3.14;
+// const r = parseInt(prompt('Enter the radious of cicle '));
+// function areaOfCircle(r){
+//     let carea= pi * r * r;
+//     document.write(carea)
+// };
+// areaOfCircle(r);
+
+// b) Write a program to convert number from integer to float, float to 
+// integer and integer to character. 
+// const x = 5;
+// const out = parseFloat(x).toFixed(2);
+// console.log(out);
+// const z = Math.floor(out);
+// console.log(z);
+
+// a) Write a program to convert temperature from celsius to fehrenhit.
+    // const x = 28 // degree C
+    // function convertTemp(x){
+    //     const f = (x * 1.8) + 32;
+    //     console.log(f);
+    // }
+    // convertTemp(x);
+
+// 4 a) Write a program to find whether given number is positive, negative or zero. 
+    // const number = prompt("enter number and check if its posative or nanagetive: ")
+    // if(number > 0){
+    //     console.log("positive");
+    //     document.write("postive");
+    // }else{
+    //     console.log("nagative");
+    //     document.write("nagative");
+    // }
+    
+// b) Write a program to find maximum of three numbers. 
+    // let num1 = 20;
+    // let num2 = 70;
+    // let num3 = 15;
+    // let largestNum = Math.max(num1, num2, num3);
+    // console.log("Three numbers are", num1, num2, "and", num3);
+    // console.log("Largest of these numbers is", largestNum);
+
+// c) Write a program to check whether given number is odd or even.
+    // const num = parseInt(prompt("Enter a number and check if its ODD or EVEN : "))
+    // if( num / 2 == 0 ){
+    //     console.log(num + " "+ "number is even");
+    //     document.write(num + " "+ "number is even number");
+    // }else{
+    //     console.log(num+ " "+ "number is odd");
+    //     document.write(num+ " "+ "number is odd number");
+    // }
+
+// d) Write a program using switch statement to check whether given 
+// character is vowel or not. // A, E, I, O, U vowel charectre
+// const char = prompt("enter a later and check if it is vowel or not :")
+// switch (char) {
+//     case (char == "a" || "A" ):
+//         document.write("this charector is vowel")
+//         break;
+//     case (char == "e" || "E"):
+//         document.write("this charector is vowel")
+//         break;
+//     case (char == "i" || "I"):
+//         document.write("this charector is vowel")
+//         break;
+//     case (char == "o" || "O"):
+//         document.write("this charector is vowel")
+//         break;
+//     case (char == "u" || "U"):
+//         document.write("this charector is vowel")
+//         break;
+
+//     default:
+//         document.write("this charector is Constant")
+//         break;
+// }
+
+//5. a) Write a program to print numbers from 1 to N in ascending and descending order, where N is the user input.
+        // const n = parseInt(prompt("Enter a number: "));
+        // for(let i=1; i<=n; i++){
+        //     document.write(i+ " "); 
+        // }
+        // for(let j = n; j >= 1; j--){
+        //     document.write(j+ " ");
+        // }
+    // b) Write a program to find addition of numbers between N1 to N2 
+    // which are divisible by 5, where N1 and N2 are user input. 
+        // const N1 = parseInt(prompt("Enter N1 for addition"));
+        // const N2 = parseInt(prompt("Enter N2 for addition"));
+        // const sum = (N1+N2)/5;
+        // document.write(sum)
+
+//6. a) Write a program to count odd numbers present in given range.
+        // let N = 10; //parseInt(prompt("Enter the value"));
+        // for(let i=1; i<=10; i++){
+        //     if(i % 2 !== 0){
+        //         console.log(i);
+        //         i++;
+        //     }
+        // }
+
+    // b) Write a program to find sum of digits of a given number. 
+            // let num = 1234;
+            // sum = 0;
+            // console.log(num % 10);
+            // console.log(parseInt(num / 10));
+            // while (num != 0){
+            //     let rem = num % 10;
+            //     sum= sum + rem;
+            //     num = parseInt(num /10);
+            // }
+            // console.log(sum);
+// 7. program to print a given pattern
+// * 
+// ** 
+// *** 
+// for (let i=0; i<=5; i++){
+//     for(let j=0; j<i; j++){
+//         document.write("*");
+//     }
+//     document.write("<br />")
+// }
+
+// 1 
+// 2 2 
+// 3 3 3
+// let n = 3;
+// let char = "";
+// for(let i = 1; i<=n; i++){
+//     for(let j = 1; j<=i; j++){
+//         char += i;
+//     }
+//     char += "\n"
+// }
+// console.log(char)
+
+// 1 
+// 2 3 
+// 4 5 6 
+// let n = 3;
+// let char = "";
+// let count = 1; 
+// for(let i = 1; i<=n; i++){
+//     for(let j = 1; j<=i; j++){
+//         char += count;
+//         count++;
+//     }
+//     char += "\n"
+// }
+// console.log(char);
+
+// A 
+// B C 
+// D E F
+// let  n = 5;
+// let string = "";
+// let count= 0;
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 0; j < i; j++) {
+//     string += String.fromCharCode(count + 65);
+//     count++;
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+// 8. a) Write a program to store values in array and print each element on screen. 
+        // let arr =[1, 2, 3 ,4];
+        // arr.push(parseInt(prompt("enter a new value: ")));
+        // // for(let i = arr; i<=arr; i++){
+        //     document.write(arr)
+
+    // b) Write a program to find addition of array elements.
+        // let arr =[1, 2, 3 ,4];
+        // let sum = 0;
+        // for(let i = 0; i<arr.length; i++){
+        //     sum += arr[i];
+        // }
+        // console.log(arr +" addition of all elements is "+ sum);
+
+    // c) Write a program to print elements present in even indices.
+        // let arr =[1, 2, 3 ,4, 5];
+        // for(let i = 1; i <arr.length ; i= i+2) {
+        //         console.log(arr[i])
+        // }
+
+// 9. a) Write a program to copy elements from one matrix to another matrix. 
+        let arr1=[[1,2],[3,4]]
+        let arr2 = arr1[];
+
+        console.log(arr2)
