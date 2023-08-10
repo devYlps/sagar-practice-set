@@ -453,7 +453,7 @@
         // // for(let i = arr; i<=arr; i++){
         //     document.write(arr)
 
-    // b) Write a program to find addition of array elements.
+    // b) Write a program to find addition of array elements.  
         // let arr =[1, 2, 3 ,4];
         // let sum = 0;
         // for(let i = 0; i<arr.length; i++){
@@ -468,7 +468,107 @@
         // }
 
 // 9. a) Write a program to copy elements from one matrix to another matrix. 
-        let arr1=[[1,2],[3,4]]
-        let arr2 = arr1[];
+        // let arr1=[[1,2],[3,4]];
+        // let arr2 = arr1;
+        // console.log(arr2)
 
-        console.log(arr2)
+    // b) Write a program to find addition of two matrices. 
+        // x1 = [[1,2], [2,3], [3,4]];
+        // x2 = [[6,7], [5,4], [2,1]];
+
+        // function addMatrix(x1, x2){                 //function definition
+        //     let newX = [ ];                         // Empty Array , Here after the result will be stored after the addition of The matrix
+        //     for(let i = 0; i<x1.length; i++){               //the loop is traversing till the length of the matrix1, i.e., in this case is 3
+        //         newX[i] = [ ];
+        //         for(let j = 0; j < x1[i].length; j++){          //this creates the sub-array inside the array 
+        //             newX[i][j] = x1[i][j] + x2[i][j];
+                    
+        //         }
+        //     }
+        //     return newX;
+
+        // }
+        // console.log(addMatrix(x1, x2))                       // function call
+ 
+    // c) Write a program to find maximum elements from a matrix. 
+        // x2 = [[6,7], [5,4], [2,1]];
+        
+        // function findMax(x2){
+        //     let maxElement = Number.MIN_VALUE;
+        //     for(let i=0; i<x2.length; i++) {
+        //         for(let j=0; j<x2.length; j++) {
+        //             if (x2[i][j] > maxElement) {
+        //                 maxElement = x2[i][j];
+        //             }
+        //         }
+        //     }
+        //     return maxElement;
+        // }
+        // console.log(findMax(x2))
+
+// 10. b) Write a program to find length of a string.
+        // const nx = "SAGARBHAI";
+        // console.log(nx.length)
+    // c) Write a program to convert string from upper case to lower case.
+        // console.log(nx.toLowerCase());
+
+// 11 a) Write a program to find last digit of a given number using user defined function. 
+        // x = 1248432315698498;
+        // function lastDigit(){
+        //     return Math.floor(x%10);
+        // }
+        // console.log(lastDigit(x));
+
+    //  b) Write a program to check whether the character is alphabet or not using user defined function. 
+    // function isCharacterALetter(char) {
+    //     return (/[a-zA-Z]/).test(char)
+    //   }
+    //   console.log(isCharacterALetter("sagar"));
+    //   console.log(isCharacterALetter("6"));
+    //   console.log(isCharacterALetter("_"));
+    // c) Design calculator using user defined function. 
+        // const num1=parseInt(prompt("Enter a first value: "));
+        // const op=prompt("Enter a oprator value: ");
+        // const num2=parseInt(prompt("Enter a second value: "));
+
+        // function calculator(num1, num2, op){
+        //     switch(op){
+        //         case "+":
+        //             return num1 + num2;
+        //         case "-":
+        //             return num1 - num2;
+        //         case "*":
+        //             return num1 * num2;
+        //         case "/":
+        //             return num1 / num2;
+        //         default:
+        //             return "Invalid Operator"
+        //     }
+        // }
+        // console.log(calculator(num1, num2, op))
+
+// 12. a) Write a program to find addition of first N numbers using recursion.
+//         const num = parseInt(prompt("Eneter a number"));
+//         function addition(num){
+//             if(num>0){
+//                 return num + addition(num-1);
+//             }else{
+//                 return num;
+//             }
+//         }
+        
+//         let res = addition(num);
+//         console.log(res)
+
+        // b) Write a program to find factorial using recursion
+        // const x = parseInt(prompt("Eneter a number"));
+
+        //         function factorial(x){
+        //             if(x > 0){
+        //                 return x * factorial(x-1);
+        
+        //             }else{
+        //                 return 1;
+        //             }
+        //         }
+        //         console.log(factorial(x))
