@@ -278,5 +278,5 @@
         //     case (n1 > n2):
         //         console.log(n2 +" is minimum")
         //     break;
-            
+             
         // }
