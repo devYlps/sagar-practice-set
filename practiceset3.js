@@ -499,23 +499,219 @@
     // b) Create class vehicle which has the data members id and speed. 
     // Create subclass bike which inherits class vehicle and having 
     // method display(). Use super keyword to display id and speed.
-    class Vehicle{
-        constructor(id, speed){
-            this.id = id;
-            this.speed = speed;
-        }
-    }
-    class Bike extends Vehicle{
-        constructor(id, speed){
-            super(id, speed);
-            
-        }
-        display(){
-            document.write("Your vehical id: "+ this.id);
-            document.write("<br>");
-            document.write("And Your speed is : "+ this.speed);
-        }
-    }
-    const user1 = new Bike(123123, 50);
+        // class Vehicle{
+        //     constructor(id, speed){
+        //         this.id = id;
+        //         this.speed = speed;
+        //     }
+        // }
+        // class Bike extends Vehicle{
+        //     constructor(id, speed){
+        //         super(id, speed);
+                
+        //     }
+        //     display(){
+        //         document.write("Your vehical id: "+ this.id);
+        //         document.write("<br>");
+        //         document.write("And Your speed is : "+ this.speed);
+        //     }
+        // }
+        // const user1 = new Bike(123123, 50);
 
-    user1.display()
+        // user1.display()
+
+// 12 a) Write three classes for examination result: Student, Exam and 
+    //     Result. Student class has data members enrollment no, exam 
+    //     number and student name. Create the class Exam by inheriting 
+    //     student class. Exam class adds fields representing the marks 
+    //     scored in three subjects. Derive Result from the Exam class and it 
+    //     has its own fields such as total_marks and percentage.
+           // wrong
+            // class Student{
+            //     constructor(enrollmentNo, examNumber, studentName) {
+            //         this.enrollmentNo = enrollmentNo;
+            //         this.examNumber = examNumber;
+            //         this.studentName = studentName;
+            //     }
+            //     examination_result(){
+            //         document.write("Student Enrollment No : "+ this.enrollmentNo);
+            //         document.write("<br>");
+            //         document.write("Exam no. : "+ this.examNumber);
+            //         document.write("<br>");
+            //         document.write("Student Name : "+ this.studentName);
+            //         document.write("<br>");
+            //         document.write("Maths marks : "+ this.subject1Marks);
+            //         document.write("<br>");
+            //         document.write("Science Marks: "+ this.subject2Marks);
+            //         document.write("<br>");
+            //         document.write("Englsih marks : "+ this.subject3Marks);
+            //         document.write("<br>");
+            //         document.write("Total Marks : "+ this.totalMarks);
+            //         document.write("<br>");
+            //         document.write("Percentage : "+ this.percentage);
+
+            //     }
+            // }
+            // class Exam extends Student {
+            //     constructor(enrollmentNo, examNumber, studentName, subject1Marks, subject2Marks, subject3Marks) {
+            //     super(enrollmentNo, examNumber, studentName);
+            //     this.subject1Marks = subject1Marks;
+            //     this.subject2Marks = subject2Marks;
+            //     this.subject3Marks = subject3Marks;
+            //     }
+            // }
+            // class Result extends Student{
+            //     constructor(enrollmentNo, examNumber, studentName, subject1Marks, subject2Marks, subject3Marks) {
+            //         super(enrollmentNo, examNumber, studentName, subject1Marks, subject2Marks, subject3Marks);
+            //         this.totalMarks = this.subject1Marks + this.subject2Marks + this.subject3Marks;
+            //         this.percentage = (this.totalMarks / 300) * 100;
+            //       }
+
+            // }
+            // const s1 = new Student("16498", "123", "Sagar", 50, 80, 85);
+            // console.log("Student:", s1.studentName);
+            //   console.log("Total Marks:", s1.totalMarks);
+            //   console.log("Percentage:", s1.percentage.toFixed(2) + "%");
+
+    //right method */
+    // class Student {
+    //     constructor(enrollmentNo, examNumber, studentName) {
+    //       this.enrollmentNo = enrollmentNo;
+    //       this.examNumber = examNumber;
+    //       this.studentName = studentName;
+    //     }
+    //   }
+      
+    //   class Exam extends Student {
+    //     constructor(enrollmentNo, examNumber, studentName, subject1Marks, subject2Marks, subject3Marks) {
+    //       super(enrollmentNo, examNumber, studentName);
+    //       this.subject1Marks = subject1Marks;
+    //       this.subject2Marks = subject2Marks;
+    //       this.subject3Marks = subject3Marks;
+    //     }
+    //   }
+      
+    //   class Result extends Exam {
+    //     constructor(enrollmentNo, examNumber, studentName, subject1Marks, subject2Marks, subject3Marks) {
+    //       super(enrollmentNo, examNumber, studentName, subject1Marks, subject2Marks, subject3Marks);
+    //       this.totalMarks = this.subject1Marks + this.subject2Marks + this.subject3Marks;
+    //       this.percentage = (this.totalMarks / 300) * 100; 
+    //     }
+    //   }
+      
+    //   const student1 = new Result("EN00123", "EXAM0021", "Sagar", 85, 92, 78);
+    //   console.log("Student:", student1.studentName);
+    //   console.log("Total Marks:", student1.totalMarks);
+    //   console.log("Percentage:", student1.percentage.toFixed(2) + "%");
+      
+    // b) Create a class Grandfather which has the attributes surname and 
+        // nationality. Create another class called Father which inherits 
+        // Grandfather and has the attributes name, surname and 
+        // nationality. Create class called Son which inherits Grandfather and 
+        // has the attributes name, surname and nationality. Write a 
+        // program to display the specified details
+
+            // class Grandfather {
+            //     constructor(surname, nationality) {
+            //         this.surname = surname;
+            //         this.nationality = nationality;
+            //     }
+            // }
+
+            // class Father extends Grandfather {
+            //     constructor(name, surname, nationality) {
+            //         super(surname, nationality);
+            //         this.name = name;
+            //     }
+            // }
+            // class Son extends Grandfather {
+            //     constructor(name, surname, nationality) {
+            //         super(surname, nationality);
+            //         this.name = name;
+            //     }
+            // }
+            // const grandfather = new Grandfather("Rathod", "Indian");
+            // const father = new Father("Pratapbhai", "Rathod", "Indian");
+            // const son = new Son("Sagar", "Rathod", "Indian");
+
+            // console.log("Grandfather:");
+            // console.log("Surname:", grandfather.surname);
+            // console.log("Nationality:", grandfather.nationality);
+
+            // console.log("\nFather:");
+            // console.log("Name:", father.name);
+            // console.log("Surname:", father.surname);
+            // console.log("Nationality:", father.nationality);
+
+            // console.log("\nSon:");
+            // console.log("Name:", son.name);
+            // console.log("Surname:", son.surname);
+            // console.log("Nationality:", son.nationality);
+
+// 14 Describe abstract class called Shape which has three subclasses say 
+//         Triangle, Rectangle, and Circle. Define one method area()in the 
+//         abstract class and override this area() in these three subclasses to 
+//         calculate for specific object i.e. area() of Triangle subclass should 
+//         calculate area of triangle etc. Same for Rectangle and Circle.
+            // class Shape{
+            //     constructor(){
+            //     console.log(`Abstract Shape`)
+            //     }
+            //     area(){
+            //     console.log(`requested Auto approved`)
+            //     } 
+            // }
+            // class Triangle extends Shape{
+            //     area(area, base, height){                                   // this is method overriding for spacific
+            //     super.area(area)
+            //     this.base = base;
+            //     this.height = height;
+            //     console.log("the area of Triangle  : " + (base * height)/2);
+            //     }     
+            // }
+            // class Rectangle extends Shape{
+            //     area(area, weidth, height){                                   // this is method overriding for spacific
+            //     super.area(area)
+            //     this.weidth = weidth
+            //     this.height = height
+            //     console.log("The are of Rectangle : " + (weidth * height))
+            //     }     
+            // }
+            // class Circle extends Shape{
+            //     area(area, redius){                                   // this is method overriding for spacific
+            //     super.area(area)
+            //     this.redius = redius
+            //     console.log("The area of Circle is : " + (3.18 * redius * redius))
+            //     }     
+            // }
+
+            // let tr = new Triangle ()
+            // tr.area(0, 50, 15)
+            // let re = new Rectangle ()
+            // re.area(0, 15, 10)
+            // let cr = new Circle ()
+            // cr.area(0, 5)
+
+// 15. Prepare a mini project for “Catalog system”.
+//         Hint: Design class Product which has abstract method ShowPrice() 
+//         and ShowBrand() and variable product_id. Design subclass 
+//         Mobile_phone which has instance member brand and implement the 
+//         method ShowBrand(). Design subclass Iphone which inherits 
+//         Mobile_phone has instance member price and implement the method 
+//         ShowPrice(). Create program to print price of product based on 
+//         product_id.
+            class Product{
+                // badhi brand and detail ahiaya hase
+                // const product_id; // constructor banavanu che
+            }
+            class Mobile_phone{
+                showPrice(price, implement){
+
+                }
+                ShowBrand(brand, implement) {
+
+                }
+            }
+            class Iphone extends Mobile_phone{
+
+            }
